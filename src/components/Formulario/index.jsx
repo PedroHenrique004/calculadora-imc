@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from './index.module.css'
 
-const Form = ({ imc, setImc }) => {
+const Form = ({ props, setProps }) => {
     let [peso, setPeso] = useState(0)
     let [altura, setAltura] = useState(0)
     let [funciona, setFunciona] = useState(false)
@@ -10,8 +10,8 @@ const Form = ({ imc, setImc }) => {
     console.log(peso)
 
     const calculaIMC = () => {
-        let imc = peso / ((altura / 100) * (altura / 100) );
-        setImc(imc)
+        let props = peso / ((altura / 100) * (altura / 100) );
+        setProps(props)
     }
 
     const ativaFuncoes = () => {
@@ -28,7 +28,7 @@ const Form = ({ imc, setImc }) => {
                         <input onChange={(evento) => setPeso(parseFloat(evento.target.value))} type="number" placeholder="Digite seu peso" /> 
                         <input onChange={(evento) => setAltura(parseFloat(evento.target.value))} type="number" placeholder="Digite sua altura em cm"/>
                         <button type="button" onClick={ativaFuncoes}>Enviar</button>   
-                         {funciona ? <h5>O seu IMC é: {parseFloat(imc.toFixed(2))}</h5> : <p>Preencha o formulário</p>}
+                         {funciona ? <h5>O seu IMC é: {parseFloat(props.toFixed(2))}</h5> : <p>Preencha o formulário</p>}
                     </form>
             </div>
         </>

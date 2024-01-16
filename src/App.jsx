@@ -8,8 +8,8 @@ function App() {
     
     return (
         <>
-            <Form imc={imc} setImc={setImc}/>
-            <Resultado imc={imc} />
+            <Form props={imc} setProps={setImc}/>
+            <Resultado pros={imc} />
          </>
     )
     
