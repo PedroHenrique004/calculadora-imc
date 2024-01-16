@@ -1,0 +1,33 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+button {
+    margin: 16px 0;
+    background-color: var(--corSecundaria);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+}
+
+input {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--corSecundaria);
+    font-size: 24px;
+}
+
+h5,p {
+    color: var(--corSecundaria);
+    margin-top: 75px;
+    font-size: 24px;
+}

@@ -1,0 +1,64 @@
+
+table {
+    display: block;
+    border: 1px solid black;   
+    margin-top: 100px;
+    
+}
+
+th {
+    margin: 0 300px;
+    margin-left: 0;
+    background-color: var(--corSecundaria);
+    font-size: 16px;
+}
+
+.th3 {
+    margin-left: -100px;
+}
+
+.td2{
+    margin-left: 20px;
+}
+
+.td3{
+    margin-left: 4px;
+}
+
+tr,th {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;    
+}
+
+tr {
+    border: 1px solid black; 
+    background-color: var(--corSecundaria);
+}
+
+td {
+    margin: 0px 300px;
+    margin-left: 0;
+    background-color: transparent;
+}
+
+.under {
+    background-color: rgb(56, 56, 56);
+}
+
+.normal {
+    background-color: green;
+}
+
+.alert {
+    background-color: yellow;
+}
+
+.over {
+    background-color: orange;
+}
+
+.emergency {
+    background-color: red;
+}
